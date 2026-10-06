@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NOVA Studio — a futuristic creative workspace.">
+  <title>NOVA Studio — Create Without Limits</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="orb orb-one"></div><div class="orb orb-two"></div>
+  <header class="nav">
+    <a class="brand" href="#"><span class="brand-mark">✦</span> NOVA<span class="dot">.</span></a>
+    <nav><a href="#workspace">Workspace</a><a href="#creations">Creations</a><a href="#about">About</a></nav>
+    <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">☼</button>
+  </header>
+
+  <main>
+    <section class="hero" id="workspace">
+      <div class="eyebrow"><span></span> YOUR CREATIVE SPACE</div>
+      <h1>Turn ideas into<br><em>something extraordinary.</em></h1>
+      <p class="hero-copy">NOVA is your futuristic creative workspace for ideas, code, music, words and everything in between.</p>
+      <div class="prompt-box">
+        <div class="prompt-icon">✦</div>
+        <input id="prompt" autocomplete="off" placeholder="What do you want to create today?">
+        <button id="createBtn">Create <span>↗</span></button>
+      </div>
+      <div class="suggestions">
+        <button data-prompt="Build me a landing page">Build a landing page</button>
+        <button data-prompt="Write a song idea">Write a song idea</button>
+        <button data-prompt="Give me a JavaScript project">Give me a JS project</button>
+      </div>
+    </section>
+
+    <section class="tools" id="creations">
+      <div class="section-head"><div><span class="eyebrow small">EXPLORE</span><h2>What will you create?</h2></div><span class="counter">04 TOOLS</span></div>
+      <div class="tool-grid">
+        <button class="tool-card active" data-tool="NOVA Chat"><span class="tool-icon violet">✦</span><strong>NOVA Chat</strong><small>Think, plan, solve & learn</small><span class="arrow">↗</span></button>
+        <button class="tool-card" data-tool="Music Lab"><span class="tool-icon pink">♫</span><strong>Music Lab</strong><small>Turn ideas into sound</small><span class="arrow">↗</span></button>
+        <button class="tool-card" data-tool="Visual Lab"><span class="tool-icon blue">◈</span><strong>Visual Lab</strong><small>Explore visual concepts</small><span class="arrow">↗</span></button>
+        <button class="tool-card" data-tool="Code Lab"><span class="tool-icon green">&lt;/&gt;</span><strong>Code Lab</strong><small>Build faster with code</small><span class="arrow">↗</span></button>
+      </div>
+    </section>
+
+    <section class="showcase" id="about">
+      <div class="showcase-card">
+        <div class="mini-window"><div class="window-top"><i></i><i></i><i></i><span>NOVA / workspace</span></div>
+          <div class="code-lines"><b>01</b><span>const</span> idea = <mark>"make it unforgettable"</mark>;<br><b>02</b><span>nova</span>.create(idea);<br><b>03</b><span class="soft">→ imagination unlocked</span></div>
+        </div>
+      </div>
+      <div class="showcase-copy"><span class="eyebrow small">BUILT TO EXPLORE</span><h2>Your next idea starts here.</h2><p>Designed to feel less like a tool and more like a place you want to stay. Fast, focused and made for creators.</p><button class="outline-btn" id="startBtn">Enter NOVA Studio <span>→</span></button></div>
+    </section>
+
+    <section class="recent">
+      <div class="section-head"><div><span class="eyebrow small">YOUR SPACE</span><h2>Recent creations</h2></div></div>
+      <div id="recentList" class="recent-list"><div class="empty">No creations yet. Your next one could be here.</div></div>
+    </section>
+  </main>
+
+  <footer><span>© 2026 NOVA Studio</span><span>Built with curiosity ✦</span></footer>
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
